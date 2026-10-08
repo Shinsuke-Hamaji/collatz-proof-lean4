@@ -1,100 +1,105 @@
-# 📋 Collatz Conjecture Formalization: Requirements & Integrated System Specification Document
+# 📋 Collatz Conjecture Formalization: Requirements Definition & Integrated System Specifications
 
-## 1. Purpose and Core Philosophy (Curry–Howard Isomorphism and Governance by Type Universe)
+## 1. Objectives and Core Philosophy (Governance via Curry-Howard Isomorphism & Type Universe)
 
-This document serves as the system acceptance specification designed to evaluate human (mathematician/reviewer) requirements for the "Proof of the Collatz Conjecture" with 100% certainty through automated machine verification (strong normalization) in the Lean 4 environment.
+### 【Project Declaration】
+The objective of this project is to **transition and evolve the verification process of potential infinity—which has traditionally been confined to human mental simulation using paper and pencil—into an actual process on the theorem prover "Lean 4" (an advanced form of machine simulation).** By doing so, we strictly execute and complete the proof and verification from the **Peano infinite tree to the Simplified Collatz Conjecture, and ultimately to the Full Collatz Conjecture** on a machine process via the accumulation of finite inference rules (strong normalization), without relying on actual infinity as a physical entity.
 
-Based on the Curry–Howard Isomorphism (**Theorem ≡ Type**, **Proof ≡ Program**), the physical fact that the machine (the Lean 4 kernel) compiles the code according to specifications inherently implies the proof of all actual processes and absolute comprehensiveness.
+### Governance via Curry-Howard Isomorphism and Type Universe
+This document serves as the System Acceptance Specification to 100% reliably judge the "Proof of the Collatz Conjecture" demanded by humans (mathematicians/reviewers) through automated machine verification (strong normalization) within the Lean 4 environment.
 
-This establishes a paradigm shift toward "Complete Governance by the Type Universe" without errors, eliminating the scotoma (psychological blind spot) inherent in traditional number theory—namely, "mental simulation" deadlocks caused by the limitations of static ZFC set theory. By strictly excluding `axiom` and `sorry` from the codebase, a successful `lake build` built purely on Lean 4’s primitive type system concludes the User Acceptance Testing (UAT) as an objective fact free from subjective misunderstandings.
+Based on the Curry-Howard Isomorphism (**Theorem = Type, Proof = Program**), the physical fact that the machine (Lean 4 kernel) compiles the code exactly according to specifications automatically implies the proof of all actual processes and absolute completeness.
+
+We break through the scotoma (psychological blind spot) of existing number theory—namely, the deadlock caused by mental simulation under the limits of static ZFC set theory—and establish a paradigm shift to error-free "Complete Governance via the Type Universe." By completely eliminating `axiom` and `sorry` within the codebase, a successful `lake build` of this code, constructed solely on Lean 4's primitive type system, completes the User Acceptance Testing (UAT) as an objective fact free from subjective misinterpretation.
 
 ---
 
-## 2. Hierarchical Architecture of Proof (Domino Structure of Comprehensive Proof)
+## 2. Proof Hierarchical Architecture (The Domino Structure of Inclusive Proof)
 
-Eliminating the traditional approach of sampling and tracking individual numerical values (infinite exhaustive testing), this system concludes the proof via a **3-stage hierarchical subsumption (domino effect) structure**:
+Instead of the traditional approach of tracking individual concrete numbers through sampling (which amounts to infinite exhaustive testing), this system completes the proof through the following **3-tier hierarchical subsumption (domino effect) structure**.
 
 ```
-[Step 1: Infrastructure Topology Proof]
-Establish the completeness (existence of root, absence of cycles) of Peano infinite tree structures in the Type Universe across 1D ➔ 2D ➔ 3D spaces.
+【Step 1: Infrastructure Topology Proof】
+Establish the completeness of the 1D ➔ 2D ➔ 3D Peano infinite tree structure (existence of root, absence of cycles) in the Type Universe.
 │
 ▼
-[Step 2: Core Structure Proof]
-Proof of the Hamaji Strong Conjecture (Ceiling Bounding Condition: N > K)
-(No matter how severely values fluctuate, the structural generation K never exceeds the initial value N bound.)
+【Step 2: Core Structural Proof】
+Proof of the Hamaji Strong Conjecture (Ceiling Bound Condition: N > K)
+(No matter how wildly the numerical values fluctuate, the structural generation K never exceeds the upper bound of the initial value N.)
 │
 ▼
-[Step 3: Automated Comprehensive Proof]
-Complete validation of the Collatz Conjecture (100% automated logical consequence)
-(Any natural number N is bijectively embedded into this infinite tree structure, guaranteeing convergence to 1.)
+【Step 3: Automated Inclusive Proof】
+Complete Establishment of the Collatz Conjecture (100% Automated Consequence)
+(Any arbitrary natural number N is bijectively integrated into this infinite tree structure, guaranteeing convergence to 1.)
 ```
 
-* **Core Specification**: By completely proving the higher-level structures in Step 1 and Step 2 within Lean 4, the lower-level individual proposition—the "Collatz Conjecture"—is comprehensively proven as a **mere theoretical consequence (automated sign-off)**.
+* **Core of the Specifications**: By completely proving the upper-level structures of Step 1 and Step 2 on Lean 4, the lower-level individual proposition, the "Collatz Conjecture," is comprehensively proven as a **mere theoretical consequence (automated sign-off)**.
 
 ---
 
 ## 3. Dimensional Topology Specifications (1D / 2D / 3D)
 
-Through stepwise refactoring, generalized software engineering design principles are applied to guarantee verification robustness.
+Through stepwise refactoring, we implement a generalized design akin to commercial package software to guarantee verification reliability.
 
 | Dimensional Space | Extracted Node Condition (`isValidVertex`) | Role and Topological Structure |
 | :--- | :--- | :--- |
-| **1D Space** | All natural numbers ($\mathbb{N}$) | **Infrastructure Unit Test**: Establishes the basic specification of "an infinite tree rooted at 1" on top of Peano arithmetic. |
-| **2D Space** | Odd numbers only ($x \% 2 \neq 0$) | **Middleware Integration Test**: Verifies monotone decreasing invariants and cycle-free tree structures using the simplified Collatz map (excluding evens). |
-| **3D Space** | Natural numbers of form $4n+1$ only | **Production Logic Verification**: Constructs a complete network connecting encapsulated subtrees via $3n+1 \leftrightarrow 4n+1$ mutual mappings. |
+| **1D Space** | All Natural Numbers ($\mathbb{N}$) | **Infrastructure Unit Test**: Constructs the basic specification of the "Infinite Tree Structure rooted at 1" on top of Peano axioms. |
+| **2D Space** | Odds Only ($x \% 2 
+eq 0$) | **Middleware Integration Test**: Verifies the monotonically decreasing invariant and the cycle-free tree structure using the Simplified Collatz (excluding evens). |
+| **3D Space** | $4n+1$ Type Natural Numbers Only | **Production Logic Verification**: Constructs a complete network connecting encapsulated subtrees via the mutual mapping of $3n+1 \leftrightarrow 4n+1$. |
 
 ---
 
 ## 4. Interactive Testbench (Interactive Visual Model: $N = 27$)
 
-An interactive Web visualizer is included in the repository to provide an intuitive hands-on experience and verification of the topological structure and ceiling bound condition ($N > K$) specified in this document.
+To intuitively experience and verify the topological structure and the ceiling bound condition ($N > K$) of this specification document, a Web Visualizer is bundled within the repository.
 
-* **Demonstration Module**: [`Collatz-Sequence-Viewer1-3D.html`](./Collatz-Sequence-Viewer1-3D.html)
-* **Verification Target (Worst-case Scenario)**: $N = 27$ (The most complex seed value, peaking at $9232$ during trajectory fluctuation)
+* **Empirical Module**: [`Collatz-Sequence-Viewer1-3D.html`](./Collatz-Sequence-Viewer1-3D.html)
+* **Verification Target (Worst-Case)**: $N = 27$ (The most complex seed value, fluctuating up to a maximum value of $9232$ midway)
 
-### Bounding Evaluation Results per Dimensional Space (for $N = 27$)
+### Bound Evaluation Results in Each Dimensional Space (For $N = 27$)
 
 1. **1D Space (Peano Linear Space)**:
    * Condition: All natural number nodes
    * Result: $N = 27 \implies K = 27$ ($N \ge K$: Verifies the countdown line of the basic structure)
 2. **2D Space (Simplified Collatz Space)**:
-   * Condition: Extracted odd nodes only
-   * Result: $N = 27 \implies K = 2$ ($27 > 2$: Demonstrates dramatic generation compression through even-number elimination)
+   * Condition: Only odd nodes extracted
+   * Result: $N = 27 \implies K = 2$ ($27 > 2$: Verifies the dramatic generation compression characteristic achieved by removing evens)
 3. **3D Space (Full Collatz Structure)**:
-   * Condition: Extracted vertex nodes of form $4n+1$ only
-   * Result: $N = 27 \implies K = 17$ ($27 > 17$: Regardless of how wildly values spike up to $9232$, the structural generation $K$ never breaches the initial ceiling $N=27$)
+   * Condition: Only $4n+1$ type vertex nodes extracted
+   * Result: $N = 27 \implies K = 17$ ($27 > 17$: Even if the numerical value leaps like a thunderstorm up to $9232$, the structural generation $K$ absolutely never breaks through the initial ceiling $N = 27$)
 
 ---
 
-## 5. Real Process Definition (Strong Normalization Specification in 2-adic Topological Space)
+## 5. Actual Process Definition (Strong Normalization Specification in p-adic Topological Space)
 
-While traditional number theory attempts to mentally emulate numerical fluctuations based on "real-value metric distances," this system physically determines Collatz operations as **type-level term reduction (strong normalization process)** within a 2-adic (ultrametric) topological space.
+While traditional number theory mentally emulates numerical fluctuations based on "real number distance," this system physically determines the Collatz operations as a **term reduction at the type level (strong normalization process)** within a 2-adic p-adic (ultrametric) distance space.
 
-1. **Topological Transformation via 2-adic Invariant (Mersenne Order)**:
-   * Value growth (e.g., $4n+3 \rightarrow 6n+5$) is defined not as "divergence" in real space, but as a **strict monotonic countdown chain decreasing by exactly "1"** in the invariant `mo` (Mersenne Order) within 2-adic space (verified in theorem `mo_4n3_eq_mo_6n5_plus_one`).
-   * Vertices of form $4n+1$ (the "Wall of Order") with an absolute Mersenne Order boundary of 1 are structurally placed as the termination points of this countdown chain.
+1. **Topological Transformation by 2-adic p-adic Invariant (Mersenne Order)**:
+   * The expansion of numerical values (e.g., $4n+3 ightarrow 6n+5$) is defined not as "divergence" in real space, but as a **strict monotonic decrease by "1" (a countdown chain)** of the invariant `mo` (Mersenne Order) in p-adic space (substantiated by the theorem `mo_4n3_eq_mo_6n5_plus_one`).
+   * As the termination of this decreasing chain, the $4n+1$ type vertex (the Wall of Order) is structurally deployed as the absolute boundary where the Mersenne Order is 1.
 
-2. **Type-Level Strong Normalization (Physical Guarantee of Termination)**:
-   * Seemingly chaotic numerical operational steps are inverted and encapsulated into topological generation depth (Index $K$: `generation t`).
-   * For any initial value $N$, the structural generation $K$ obtained via 2-adic countdown never exceeds the initial ceiling (**Hamaji Strong Conjecture: $N > K$**, universally proven in theorem `generation_lt_value`).
-   * Every node possesses a unique parent path pointing toward the root (1). Evaluation completion (termination) in finite steps is 100% physically guaranteed via type-level strong normalization (reduction) by the Lean 4 kernel.
-
----
-
-## 6. Acceptance Testing (UAT) and Criteria
-
-The client (reviewers/third parties) shall judge the User Acceptance Testing (UAT) as passed (signed off) when the Lean 4 compiler successfully builds the repository with zero errors (`lake build` success) under the following conditions:
-
-1. **Complete Absence of `sorry` and Unverified Axioms**: The codebase contains no unproven skips (`sorry`) or forced external `axiom` declarations.
-2. **Cycle-Free Topology**: The 1D to 3D infinite tree structures contain no isolated loops, cycles, or topological bugs.
-3. **Full Pass of the Hamaji Strong Conjecture**: For any natural number $N$, the ceiling condition $N > K$ is universally proven at the type level, resulting in the automatic comprehensive proof of the Collatz Conjecture.
+2. **Strong Normalization at the Type Level (Physical Guarantee of Termination)**:
+   * The steps of the numerical operation, which appear chaotic, are completely inverted and encapsulated into the topological generation depth (Index $K$: `generation t`).
+   * For any arbitrary initial value $N$, the structural generation $K$ obtained via the p-adic countdown absolutely never exceeds the initial ceiling (**Hamaji Strong Conjecture: $N > K$**, universally proven by the theorem `generation_lt_value`).
+   * Every node possesses a unique parent path leading toward the root (1). Due to the type-level strong normalization (reduction) by the Lean 4 kernel, evaluation completion (termination) within finite steps is physically 100% guaranteed.
 
 ---
 
-## 7. Architectural Notes for Misunderstanding Prevention (Guidance for Reviewers and AIs)
+## 6. User Acceptance Testing (UAT) and Evaluation Criteria
 
-Because the approach in this repository is rooted in computability and type theory, interpreting it through the lens of traditional number theory (tracking numbers via real distances) will cause severe misunderstandings. Please evaluate with strict distinction regarding the following three points:
+The client (reviewer/third party) determines that the User Acceptance Test is passed (signed off) when the Lean 4 compiler successfully completes the build with zero errors (`lake build` success) under the following conditions:
 
-1. **Meaning of "Axiom of Real Process"**: In this context, "axiom" does not mean adding new postulates to Lean 4, but refers to a computer science design philosophy (Curry's perspective) where the physical "type-level strong normalization (termination)" executing on physical machines serves as a real operational rule.
-2. **Absolute Nature of Ultrametric Distance**: Regardless of how large real numbers grow, the mathematical foundation relies on the fact that `mo` (Mersenne Order) strictly decreases by "1" in 2-adic space (`mo_4n3_eq_mo_6n5_plus_one`).
-3. **Separation of Value and Generation**: The object bound and constrained by the ceiling condition $N > K$ is not the wild "numerical value itself," but the "generation of the structure (depth of the tree)" positioned in the Type Universe.
+1. **Complete Absence of `sorry` and Unknown Axioms**: Not a single unproven skip (`sorry`) or `axiom` keyword forcing external rules exists within the code.
+2. **Cycle-Free Topology**: No isolated loops or bugs exist within the 1D to 3D infinite tree structures.
+3. **Complete Pass of the Hamaji Strong Conjecture**: For any arbitrary natural number $N$, the ceiling condition $N > K$ is universally proven at the type level, thereby automatically completing the inclusive proof of the Collatz Conjecture.
+
+---
+
+## 7. Design Notes for Misunderstanding Prevention (Guidance for Reviewers and AI)
+
+Because the approach of this repository is rooted in computability theory and type theory, reading it through the lens of traditional number theory (numerical tracking based on real number distance) will cause major misunderstandings. Evaluate by strictly distinguishing the following three points:
+
+1. **Meaning of the "Axiom of Real Process"**: In this context, "Axiom" does not mean adding a new descriptive axiom to Lean 4. It refers to the computer science design philosophy (Curry's philosophy) where the simulation of potential infinity (repetition rules of finite steps) previously conducted in the human brain is made to function as a rock-solid actual process of "type-level strong normalization (automatic termination)" executed on a physical machine.
+2. **Absolutism of Ultrametric Distance**: No matter how much the real numerical value increases, rely on the mathematical foundation that the `mo` (Mersenne Order) strictly decreases by "1" in the p-adic space (`mo_4n3_eq_mo_6n5_plus_one`).
+3. **Separation of Value and Generation (Structural Depth)**: The target being bounded (suppressed) under the ceiling condition $N > K$ is not the wild "numerical value itself," but the "structural generation (tree depth)" deployed within the Type Universe.
