@@ -6,6 +6,14 @@
 
 ---
 
+## 📋 仕様書・要件定義ドキュメント (Specifications & Requirements)
+
+* **[日本語] システム仕様統合定義書**: [`collatz_requirements_spec_JPN.md`](./collatz_requirements_spec_JPN.md)
+* **[English] System Specification Document**: [`collatz_requirements_spec_ENG.md`](./collatz_requirements_spec_ENG.md)
+* **[Interactive Viewer] 3Dトポロジー視覚モデル**: [`Collatz-Sequence-Viewer1-3D.html`](./Collatz-Sequence-Viewer1-3D.html)
+
+---
+
 ## 🌌 本リポジトリの核心：『進化の真価』
 
 従来の数学（ZFC集合論）は、無限の動的プロセスを静的な「集合」という箱に抽象化して閉じ込めていたため、人間の認知限界による「脳内シミュレーションの罠（デッドロック）」に囚われていました。
@@ -29,8 +37,8 @@
 ### 実行手順
 1. リポジトリをクローンします。
    ```bash
-   git clone <あなたのリポジトリURL>
-   cd <リポジトリ名>
+   git clone https://github.com/Shinsuke-Hamaji/collatz-proof-lean4.git
+   cd collatz-proof-lean4
    ```
 2. Lean 4 の環境をセットアップし、コンパイル（型検査）を実行します。
    ```bash
@@ -42,14 +50,14 @@
 
 ## 🧬 ソースコードの構造（証明の3ステップに対応）
 
-メインコードである `CollatzComplete.lean` は、プレスリリースに開示された以下の3つの数理的階層構造に準拠しています。
+メインコードである `CollatzComplete.lean` は、以下の3つの数理的階層構造に準拠しています。
 
-1. **`namespace CompleteCollatzTree`（ステップ1：無限木の3条件への接続）**
+1. **`namespace CompleteCollatzTree`（ステップ1：無限木の3条件への接続）**  
    自然数の生成規則「ペアノの公理」を拡張した「ペアノ無限木」を構築。Ramanujacharyuluの無限木の3条件（根の存在、単射性・分岐構造、閉路不在）へトポロジー的に接続し、例外ループのないクリーンな収束の必然性を確定。
-2. **`namespace MersenneOrder`（ステップ3：カオスから秩序への反転）**
-   2進p-進整数（\(\mathbb{Z}_{2}\)）の不変量に着目した「メルセンヌオーダー（Mersenne Order）」ダイナミクスエンジンを実装。4n+3のショートカットがオーダーを厳密に1減少させ、有限ステップで必ずオーダー1の軌道へと接続する定理 `reach_4n1_from_4n3` を完全検証。
-3. **`namespace CollatzGeneration`（ステップ2：ハルシネーションの完全排除と強い境界条件）**
-   型宇宙上で構築されたコラッツ木の「世代（構造の深さ）」を返す評価関数。任意のコラッツ木における世代数はその数値ノードよりも厳密に小さいという強い境界条件（濱地予想）を `generation_lt_value` にて強正規化実証。
+2. **`namespace MersenneOrder`（ステップ3：カオスから秩序への反転）**  
+   2進p-進整数（$\mathbb{Z}_{2}$）の不変量に着目した「メルセンヌオーダー（Mersenne Order）」ダイナミクスエンジンを実装。$4n+3$ のショートカットがオーダーを厳密に1減少させ、有限ステップで必ずオーダー1の軌道へと接続する定理 `reach_4n1_from_4n3` を完全検証。
+3. **`namespace CollatzGeneration`（ステップ2：ハルシネーションの完全排除と強い境界条件）**  
+   型宇宙上で構築されたコラッツ木の「世代（構造の深さ）」を返す評価関数。任意のコラッツ木における世代数はその数値ノードよりも厳密に小さいという強い境界条件（ハマジ強予想：$N > K$）を `generation_lt_value` にて強正規化実証。
 
 ---
 
