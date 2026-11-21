@@ -1,4 +1,4 @@
-ame = "collatz-proof-lean4"
+name = "collatz-proof-lean4"
 version = "0.1.0"
 defaultTargets = ["JSP000941"]
 
